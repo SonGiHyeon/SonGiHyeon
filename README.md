@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @SonKiHyeon
+- 👋 Hi, I’m @SonGiHyeon
 - 👀 I’m interested in AI & Machine Leaning
 - 🌱 I’m currently learning Python
 - 💞️ I’m looking to collaborate on ...
