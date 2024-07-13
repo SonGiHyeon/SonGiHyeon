@@ -1,6 +1,6 @@
-- 👋 Hi, I’m @SonGiHyeon
-- 👀 I’m interested in AI & Machine Leaning
-- 🌱 I’m currently learning Python
+- 👋 Hi, I’m @SonKiHyeon
+- 👀 I’m interested in AI, Blockchain
+- 🌱 I’m currently learning Python, React, Solidity
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me just email to tyumr70@naver.com
 
