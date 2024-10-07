@@ -1,198 +1,102 @@
-# 데모 블록체인 프로젝트
-초간단 탄소 배출권 거래 사이트
-
-# 링크
-- [기획서](https://github.com/24bb/carbonex/blob/main/README.md)
-- [백엔드](https://github.com/24bb/carbonex-server/blob/main/README.md)
-- [프론트엔드(블록체인)](https://github.com/24bb/carbonex-frontend/blob/main/README.md)
-
-  
-# 기획서
 ## 문제점
-<!-- > 주제로 정한 문제점에 대한 설명   -->
+
 탄소배출권 거래가 투명하지 못하고, 나라마다 다른 통화 문제점
 
 ## 해결책
-<!-- > 문제점을 해결할 방식   -->
+
 블록체인에서 거래를 하며 투명하게 기록하고, 공통 토큰으로 결제를 함
 
-## 구조도 
-<!-- > (그림) 기술이 어떤 관계로 구성되어 있는지   -->
+## 구조도
 
-![프레젠테이션1](https://github.com/user-attachments/assets/e58ce87c-c544-445f-ae61-8f9a71744219)
-
-
-
+![image](https://github.com/user-attachments/assets/62494a62-bf9f-415c-b653-3caa9e4e5182)
 
 
 ## 흐름도
 
-<!-- > (그림) 기능 사용의 흐름도   -->
+- 메인 페이지 접속 → 처음 오게 되면 회원가입, 회원가입이 되어있는 사용자는 로그인
+- 로그인 완료한 사용자는 탄소 배출량 조회, 거래 시작, 거래 내역 조회 기능을 사용할 수 있다
+- 탄소 배출량 조회: 주요 6국가에 대해서 전일대비 탄소 배출량이 얼마나 변했는지 확인할 수 있다
+- 거래 시작: 거래창에서는 사용자가 자신의 국가리를 선택하고 배출권을 얼마나 구매할 지 결정한다
+- 거래 내역 조회: 거래창에서 제출 버튼을 누르면 그 정보가 거래 내역에 그대로 나타난다
 
-![image](https://github.com/user-attachments/assets/b087a648-09fa-4782-8866-86133a7b33c2)
+![image](https://github.com/user-attachments/assets/4f2d595f-214b-4511-b1bf-a6097eecd2fe)
+
 
 ## 디자인
-<!-- > UI 디자인 그림 (피그마 or PPT 도형)   -->
 
 (피그마 or PPT 도형)
 
-* 메인 페이지
-  
-![image](https://github.com/user-attachments/assets/89658f3a-e2a1-41f7-b8dc-870101184bc6)
+- 메인 페이지
 
-* 탄소 배출량 조회
-  
-![image](https://github.com/user-attachments/assets/ac970046-35e6-4abb-a2bb-565a41b73b50)
+![image](https://github.com/user-attachments/assets/8f016fa2-cab2-4f07-a63a-114ff9299832)
 
-* 거래창
-  
-![image](https://github.com/user-attachments/assets/f87ee989-9905-4700-8775-802724d90daa)
 
-* 거래내역 
-  
-![image](https://github.com/user-attachments/assets/8067ae69-892a-46da-91bc-1afa75ff0769)
+- 탄소 배출량 조회
 
-* 회원가입
+![image](https://github.com/user-attachments/assets/ecfbc96e-b25b-4965-a0a2-103edebc5128)
 
-![image](https://github.com/user-attachments/assets/35d9e2d4-a853-42fa-aade-df480c289c74)
 
-* 로그인
+- 거래창
 
-![image](https://github.com/user-attachments/assets/314fb530-bbd6-4265-8b51-1d8f5e65c7b0)
+![image](https://github.com/user-attachments/assets/2d0a875f-e959-428b-bfd6-208efcad2054)
 
-* 마이페이지
 
-![image](https://github.com/user-attachments/assets/ce29a18f-a9d1-440e-a920-8be40ba90e50)
+- 거래내역
+
+![image](https://github.com/user-attachments/assets/ba0d2a43-9017-4086-b30e-c91059ad19c5)
+
+
+- 회원가입
+
+![image](https://github.com/user-attachments/assets/9c1769c2-eda9-4312-88f3-845cf4fdadd9)
+
+
+- 로그인
+
+![image](https://github.com/user-attachments/assets/79749fab-69a4-44d5-9984-1bf1d4917b48)
+
+
+- 마이페이지
+
+![image](https://github.com/user-attachments/assets/e36fe735-2140-496b-84bb-4c0884d02456)
 
 
 ## 기능
-<!-- > 제품의 주요 기능 설명  (백엔드 API, 등등)   -->
 
-#### 1. 웹 서버  
-
-    - 기본적인 웹서비스 제공, 백엔드 담당
-
-#### 2. 사용자 계정 등록/로그인  
-로그인 후 서비스 이용 가능, 백엔드 담당, DB 사용
-
-    - 등록: `/register`
-    - 로그인: `/login`
-
-#### 3. 탄소 배출량 조회  
-
-    네트워크 접근으로 조회, 프론트엔드 담당
-
-#### 4. 탄소 배출권 거래  
-
-    네트워크 접근으로 거래, 프론트엔드 담당
-
-#### 5. 거래 내역 확인  
-
-    네트워크 접근으로 조회, 프론트엔드 담당
+1. **웹 서버**
+    1. 기본적인 웹서비스 제공, 백엔드 담당
+2. **사용자 계정 등록/로그인**
+    1. 로그인 후 서비스 이용 가능, 백엔드 담당, DB 사용
+    2. 메인: `/main`
+    3. 회원가입: `/register`
+    4. 로그인: `/login`
+    5. 마이페이지: `/me`
+    
+3. **탄소 배출량 조회**
+    1. 외부 API로 조회, 백엔드 담당
+    2. 탄소 배출량 조회: `/status`
+    
+4. **탄소 배출권 거래**
+    1. 이더리움 네트워크 접근으로 거래, 블록체인 담당
+    2. 거래창: `/trade`
+5. **거래 내역 확인**
+    1. 이더리움 네트워크 접근으로 조회, 블록체인 담당
+    2. 거래내역:  `/transaction history`
 
 ## 역할
-<!-- > 구성원들의 역할   -->
-#### `기획자`(1): 서비스 기획
-- 기술 스택: 문서화(markdown), 그림, PPT, Figma(선택)
 
-#### `프론트엔드`(1): 기능구현, UI
-- 기술 스택: React or Next.js
-
-#### `백엔드`(2): 서버 구축
-- 기술 스택: Django, Python, DB(선택)
-
-#### `블록체인`(1): 네트워크, 프론트엔드 기능구현
-- 기술 스택: js, Ethereum, Solidity
-
-
+- **기획자**(1): 서비스 기획
+    - 기술 스택: 문서화(markdown), 그림, PPT, Figma(선택)
+- **프론트엔드**(2): 기능구현, UI
+    - 기술 스택: React or Next.js
+- **백엔드**(1): 서버 구축
+    - 기술 스택: FastAPI, Python, PostgreSQL
+- **블록체인**(1): 네트워크, 프론트엔드 기능구현
+    - 기술 스택: js, Ethereum, Solidity
 
 ## 계획표
-<!-- > 시간/단계 관련 계획   -->
 
 - 1단계: 기획 및 요구사항 정의
 - 2단계: 프론트엔드 및 백엔드 초기 개발
 - 3단계: 블록체인 통합 및 테스트
 - 4단계: 최종 테스트 및 배포
-
-<!-- ## 기대효과 & 향후계획 -->
-<!-- > 프로젝트 사용으로 인한 효과   -->
-<!-- > 향후 추가 기능 -->
-
-
-
-<!-- 1. 문서화
-
-* 구조도/흐름도
-시스템 아키텍처 다이어그램:
-사용자 -> 웹 브라우저 -> 프론트엔드 서버 -> 백엔드 서버 -> 블록체인 노드 및 외부 API
-프론트엔드 서버: React
-백엔드 서버: Node.js
-블록체인: Ethereum(컨트렉트 세부사항 확인)
-
-* 프로젝트 일정표 작성:
-
-1주차: 기획 및 요구사항 정의
-2-3주차: 프론트엔드 및 백엔드 초기 개발
-4-5주차: 블록체인 통합 및 테스트
-6주차: 최종 테스트 및 배포
-
-2. 요구사항 정의
-
-* 기능적 요구사항:
-
-사용자는 회원가입을 할 수 있어야 한다.
-사용자는 자신의 탄소 배출량을 조회할 수 있어야 한다.
-사용자는 다른 사용자와 탄소 배출권을 거래할 수 있어야 한다.
-시스템은 거래 내역을 저장하고 사용자에게 제공해야 한다.
-
-* 비기능적 요구사항:
-
-시스템은 99% 이상의 가용성을 가져야 한다.
-시스템은 하루에 1만 명의 사용자 트래픽을 처리할 수 있어야 한다.
-시스템은 HTTPS를 사용하여 보안을 유지해야 한다.
-
-3. 기술 스택 결정
-
-프론트엔드: React
-백엔드: Node.js + Express + (Python?)
-블록체인: Ethereum, Solidity
-데이터베이스: MongoDB, Mysql
-
-4. 프로토타입 제작
-
-와이어프레임 작성: Figma를 사용하여 UI 구조 설계
-홈 화면: 탄소 배출량 조회 버튼, 거래 버튼
-거래 화면: 거래 내역 목록, 거래 실행 폼
-클릭 더미 제작: 주요 화면 간의 네비게이션 테스트 가능
-
-5. 의사소통 계획
-
-* 정기 회의 일정 수립:
-주간 회의: 매주 월요일 및 목요일
-진행 상황 업데이트 및 이슈 해결
-
-* 보고서 및 업데이트:
-주간 보고서: 프로젝트 진행 상황, 완료된 작업, 이슈 및 해결 방안 문서화
-
-6. 위험 관리
-
-* 잠재적 리스크 식별:
-
-블록체인 네트워크 지연
-외부 API 비가용성
-사용자 데이터 유출
-
-* 리스크 대응 계획 수립:
-블록체인 네트워크 지연 시: 임시 대체 네트워크 사용
-외부 API 비가용성 시: 캐시 데이터 사용
-사용자 데이터 유출 방지: 데이터 암호화 및 정기 보안 점검
-
-7. 테스트 계획
-
-* 테스트 시나리오 작성:
-사용자 등록/로그인 테스트
-탄소 배출량 조회 테스트
-탄소 배출권 거래 테스트
-거래 내역 확인 테스트
-
- -->
