@@ -2,7 +2,7 @@
 - 👀 I’m interested in AI, Blockchain
 - 🌱 I’m currently learning Solidity, Javascrpit, React
 - 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me just email to tyumr70@naver.com
+- 📫 How to reach me just email to tyumr70@gmail.com
 
 <!---
 SonKiHyeon/SonKiHyeon is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
