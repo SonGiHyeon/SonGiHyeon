@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Gihyeon Son, President of the SKKU Blockchain Academy and a reporter at Nexblock, EToday Blockchain Media.
-- 👀 I’m interested in AI, Blockchain
+- 👀 I’m interested in AI Agent, Blockchain, Stablecoin
 - 📫 How to reach me just email to tyumr70@gmail.com
 
 <!---
